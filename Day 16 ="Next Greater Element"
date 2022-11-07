@@ -1,0 +1,27 @@
+{
+    public:
+    //Function to find the next greater element for each element of the array.
+    vector<long long> nextLargerElement(vector<long long> arr, int n){
+          vector<long long> vec;
+        for(int i=0;i<n;i++)
+        {
+             int c = 0;
+            for(int j=i+1;j<n;j++)
+            {
+                if(arr[i]<arr[j])
+                {
+                      vec.push_back(arr[j]);
+                      c = 1;
+                      break;
+                }
+            }
+            if(c==0)
+                {
+                      vec.push_back(-1);
+                      
+                }
+        }
+        return vec;
+        // Your code here
+    }
+};
