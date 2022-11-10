@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout<<"Enter the number of elements"<<endl;
+    cin>>n;
+    cout<<"Enter the elemements"<<endl;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int a;
+    cout<<"Enter the elements for search"<<endl;
+    cin>>a;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]==a)
+        {
+            cout<<"Element at index "<<i+1<<" is present"<<endl;
+        }
+    }
+}
