@@ -1,0 +1,77 @@
+//{ Driver Code Starts
+#include<bits/stdc++.h>
+using namespace std;
+ 
+
+// } Driver Code Ends
+class Solution{
+  public:
+    /*You are required to complete below function */
+    int multiplyStrings(string s1, string s2) {
+      int  long long  mun,mul;
+      #Unsigned long long nm;
+      
+    //    std::int64_t] num;
+    
+        int neg =0,gen =0;
+        
+         num = 0; // may take long long 
+   for(int i = 0; i < s1.length(); i++){
+       if(s1[i]=='-')
+       {
+          gen = -1; 
+       }
+       else
+       {
+    num = num * 10 + s1[i] - '0';
+   }
+   }
+   
+    
+     mun = 0; // may take long long 
+for(int i = 0; i < s2.length(); i++){
+    if(s2[i]=='-')
+    {
+      neg = -1;  
+    }
+    else
+    {
+    mun = mun * 10 + s2[i] - '0';
+}
+    
+}
+if(gen == -1)
+{
+    num = num*(-1);
+}
+if(neg == -1)
+{
+    mun = mun*(-1);
+}
+        mul = num*mun;
+        return num;
+     //   string stri = to_string(mul);
+       // return stri;
+       //Your code here
+    
+    }
+
+};
+
+//{ Driver Code Starts.
+ 
+int main() {
+     
+    int t;
+    cin>>t;
+    while(t--)
+    {
+    	string a;
+    	string b;
+    	cin>>a>>b;
+    	Solution obj;
+    	cout<<obj.multiplyStrings(a,b)<<endl;
+    }
+     
+}
+// } Driver Code Ends
