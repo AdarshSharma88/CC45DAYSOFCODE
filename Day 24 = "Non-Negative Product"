@@ -1,0 +1,43 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    long long T,N;
+    cin>>T;
+    while(T--)
+    {
+        long minus = 0,count =0;
+        cin>>N;
+        int A[N];
+        for(int i=0;i<N;i++)
+        {
+            cin>>A[i];
+            if(A[i]==0)
+            {
+                count++;
+            }
+            if(A[i]<0)
+            {
+                minus++;
+            }
+        }
+            if(count>0)
+            {
+             cout<<0<<endl;
+                
+            }
+            else if(minus%2==0)
+            {
+                cout<<0<<endl;
+            }
+            else
+            {
+                cout<<1<<endl;
+            }
+        
+
+    }
+    return 0;
+
+}
