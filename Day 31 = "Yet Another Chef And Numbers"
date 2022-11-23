@@ -1,0 +1,36 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int A,B;
+	cin>>A>>B;
+	int zeros=0;
+	
+	for(int i=A+1;i<=B;i++){
+	    int rem=0,product=1,num=i;
+	    
+	    while(num>0){
+	        rem=num%10;
+	        product=product*rem;
+	        num=num/10;
+	    }
+	    
+	    
+	    if(product==0){
+	        zeros++;
+	    }
+	    int rem2=0;
+	    while(product>0){
+	        rem2 = product%10;
+	        if(rem2==0){
+	            zeros++;
+	        }
+	        product=product/10;
+	    }
+	    
+	}
+	cout<<zeros<<endl;
+	return 0;
+}
