@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T,A,B,C,D,E,F;
+    cin>>T;
+    while(T--)
+    {
+        cin>>A>>B>>C;
+        if(A<B){
+            D=A;
+        }
+        else
+        {
+            D=B;
+        }
+        if(B<C){
+            E=B;
+        }
+        else
+        {
+            E=C;
+        }
+        if(C<A){
+            F=C;
+        }
+        else{
+            F=A;
+        }
+        if((D==E && E==F &&  F==D ) || (D!=E && E!=F &&  F!=D ))
+        {
+            cout<<"Yes"<<endl;
+        }
+        else
+        {
+            cout<<"No"<<endl;
+        }
+        
+    }
+	// your code goes here
+	return 0;
+}
