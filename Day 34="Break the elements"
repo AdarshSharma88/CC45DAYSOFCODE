@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long T,N;
+    cin>>T;
+    while(T--)
+    {
+    long count =0,sum=0;
+        cin>>N;
+    long A[N];
+        for(int i=0;i<N;i++)
+        {
+            cin>>A[i];
+        }
+        for(int i=0;i<N;i++)
+        {
+            if(A[i]%2==0)
+            {
+                count++;
+            }
+            if(A[i]%2!=0)
+            {
+                sum++;
+            }
+        }
+        if(count==0 || sum==0)
+        {
+            cout<<0<<endl;
+        }
+        else if(count<sum)
+        {
+            cout<<sum-count<<endl;
+        }
+        else
+        {
+            cout<<count-sum<<endl;
+        }
+        
+        
+    }
+	// your code goes here
+	return 0;
+}
