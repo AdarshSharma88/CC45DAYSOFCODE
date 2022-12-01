@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+class Base
+{
+ int a;
+ public:
+ inline void cube()
+ {
+ cout<<"Enter the value of a for cube:"<<endl;
+ cin>>a;
+ }
+ friend int value(Base ob);
+};
+int value(Base ob)
+{
+ cout<<ob.a*ob.a*ob.a<<endl;
+}
+int main()
+{
+ Base obj;
+ obj.cube();
+ cout<<value(obj)<<endl;
+ }
