@@ -1,0 +1,125 @@
+#include<iostream>
+#include<stdlib.h>
+using namespace std;
+int main()
+{
+ string list[16]= {"1.Mathematics","2.Data 
+Structure","3.Python","4.Data Base Management 
+System","5.Artificial Language","6.Communication 
+Skill","7.Behaviour Science","8.French Language","9.Data 
+Structure Lab","10.Python Lab","11.DBMS Lab","12.AI 
+Lab","13.EVS","14.Physics","15.Chemistry"};
+ system("CLS");
+ string 
+list1[8]={"1.Mathematics","2.Python","3.Artificial 
+Language","4.Behaviour Science","5.Data Structure 
+Lab","6.Dbms Lab","7.EVS","8.Chemistry"};
+ string list2[8]={"1.Behaviour 
+Science","2.Communication skill","3.Python","4.Data 
+Structure","5.Python Lab","6.Dbms 
+Lab","7.Physics","8.Chemistry"};
+ string list3[8]={"1.Behaviour 
+Science","2.Communication Skill","3.Data Base 
+Management System","4.Ai Ml","5.EVS","6.Ai Ml 
+Lab","7.Physics","8.Chemistry"};
+ string list4[8]={"1.French","2.Data Structure 
+Lab","3.Python Lab","4.Dbms Lab","5.Ai Ml 
+Lab","6.EVS","7.Physics","8.Chemistry"};
+ int e;
+ for(int i=0;i<=15;i++)
+ {
+ cout<<list[i]<<" "<<endl;
+ }
+
+ cout<<"Enter your choice"<<endl;
+ cin>>e;
+ cout<<"List 1"<<endl;
+ for(int i=0;i<=7;i++)
+ {
+ cout<<list1[i]<<endl;
+ }
+ cout<<"Enter 1 if your chosen is present in given 
+list"<<endl;
+ int a;
+ cin>>a;
+ cout<<"List 2"<<endl;
+ for(int i=0;i<=7;i++)
+ {
+
+ cout<<list2[i]<<endl;
+ }
+ int b;
+ cout<<"Enter '1' if your chosen is present in given list 
+else enter '0'"<<endl;
+ cin>>b;
+ cout<<"List 3"<<endl;
+ for(int i=0;i<=7;i++)
+ {
+ cout<<list3[i]<<endl;
+ }
+ int c;
+ cout<<"Enter '1' if your chosen is present in given list 
+else enter '0'"<<endl;
+ cin>>c;
+
+ cout<<"List 4"<<endl;
+ for(int i=0;i<=7;i++)
+ {
+ cout<<list4[i]<<endl;
+ }
+ int d;
+ cout<<"Enter '1' if your chosen is present in given list 
+else enter '0'"<<endl;
+ cin>>d;
+ if(a==1&&b==0&&c==0&&d==0){
+cout<<"item:"<<list[0]<<"in list1";
+}
+else if(a==0&&b==1&&c==0&&d==0){
+cout<<"item:"<<list[1]<<"in list2";
+}
+ else if(a==1&&b==1&&c==0&&d==0){
+
+cout<<"item:"<<list[2]<<"in list1 and list2";
+}
+ else if(a==0&&b==0&&c==1&&d==0){
+cout<<"item:"<<list[3]<<"in list3";
+}
+ else if(a==1&&b==0&&c==1&&d==0){
+cout<<"item:"<<list[4]<<"in list1 and list3";
+}
+ else if(a==0&&b==1&&c==1&&d==0){
+cout<<"item:"<<list[5]<<"in list2 and list3";
+}
+ else if(a==1&&b==1&&c==1&&d==0){
+cout<<"item:"<<list[6]<<"in list1,list2 and list3";
+}
+ else if(a==0&&b==0&&c==0&&d==1){
+cout<<"item:"<<list[7]<<"in list4";
+}
+
+ else if(a==1&&b==0&&c==0&&d==1){
+cout<<"item:"<<list[8]<<"in list1 and list4";
+}
+ else if(a==0&&b==1&&c==0&&d==1){
+cout<<"item:"<<list[9]<<"in list2 and list4";
+}
+ else if(a==1&&b==1&&c==0&&d==1){
+cout<<"item:"<<list[10]<<"in list1,list2 and 
+list4";
+}
+ else if(a==0&&b==0&&c==1&&d==1){
+cout<<"item:"<<list[11]<<"in list3 and list4";
+}
+ else if(a==1&&b==0&&c==1&&d==1){
+cout<<"item:"<<list[12]<<"in list1,list3 and 
+list4";
+}
+else if(a==0&&b==1&&c==1&&d==1){
+cout<<"item:"<<list[13]<<"in list2,list3 and 
+list4";
+}
+ else{// if(a==1&&b==1&&c==1&&d==1){
+cout<<"item:"<<list[14]<<"in list1,list2,list3 and 
+list4";
+}
+}
